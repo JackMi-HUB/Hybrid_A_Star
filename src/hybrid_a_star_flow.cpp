@@ -131,7 +131,7 @@ void HybridAStarFlow::Run() {
             geometry_msgs::PoseStamped pose_stamped;
 
             for (const auto &pose: path) {
-                pose_stamped.header.frame_id = "world";
+                pose_stamped.header.frame_id = "world";//header inck
                 pose_stamped.pose.position.x = pose.x();
                 pose_stamped.pose.position.y = pose.y();
                 pose_stamped.pose.position.z = 0.0;
